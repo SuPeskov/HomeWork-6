@@ -7,8 +7,35 @@
     <link rel="stylesheet" href="./Styles/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Заголовок сайта</h1>
+    <header class="header">
+        <h1 class="title">Home Work 5.1.1</h1>
     </header>
+    <article>
+        <p class="text-field">
+            <label class="text-field__label" for=""> Новая задача: </label>
+            <p class="text-field__group">
+                <input class="text-field__input" id="returnTask" type="text" name="taskRetry" placeholder="Название задачи" required>
+                <button class="text-field__btn" id="clkTask"> Добавить задачу </button>
+            </p>
+        </p>
+        <nav class="nav-top">
+            <button class="btn" id="all"> Показать все задачи </button>
+            <button class="btn" id="allTrue"> Показать выполненные</button>
+            <button class="btn" id="allFalse"> Показать не выполненные</button>
+            <button class="btn2" id="closeTask"> Отметить задачу выполненной </button>
+            <button class="btn2" id="delTask"> Удалить задачу </button>
+
+        </nav>
+    </article>
+    <main>
+        <h2 class="headList" id="allTask">Список всех Ваших задач</h2>
+        <ol id="taskList">
+            
+        </ol>
+    </main>    
+    <footer>
+        <p>© 2024 Создано SuPeskov. Все права защищены.</p>  
+    </footer>
+    <script type="Module" src="./script.js"></script>
 </body>
 </html>
