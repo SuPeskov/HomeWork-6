@@ -38,7 +38,7 @@ btnAll.addEventListener("click", () => {
         const start = document.querySelector(".headList");               //Находим заголовок списка задач
         start.textContent = "Список всех Ваших задач";                  //Меняем заголовок 
         start.id = "allTask";                                            //Создаем класс для определения списка на экране
-        start.parentNode.insertBefore(newList, start.nextSibling); } 
+        } 
         else {
             alert("У вас нет задач.")
         }    
@@ -47,7 +47,7 @@ btnTrue.addEventListener("click", () => { if (listOfTasks.length != 0) {renderTa
     const start = document.querySelector(".headList");               //Находим заголовок списка задач
     start.textContent = "Список выполненных задач";                  //Меняем заголовок 
     start.id = "trueTask";                                            //Создаем класс для определения списка на экране
-    start.parentNode.insertBefore(newList, start.nextSibling); } 
+    } 
     else {
         alert("У вас нет задач.")
     }    
@@ -56,7 +56,7 @@ btnFalse.addEventListener("click", () => { if (listOfTasks.length != 0) {renderT
     const start = document.querySelector(".headList");               //Находим заголовок списка задач
     start.textContent = "Список не выполненных задач";                  //Меняем заголовок 
     start.id = "falseTask";                                            //Создаем класс для определения списка на экране
-    start.parentNode.insertBefore(newList, start.nextSibling); } 
+    } 
     else {
         alert("У вас нет задач.")
     }    
